@@ -1,0 +1,2 @@
+# Ignore output generated during debug launches.
+results/
