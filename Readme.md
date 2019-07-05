@@ -11,10 +11,12 @@ This simple tool is just a sample of using [System.CommandLine](https://github.c
 ## Installation
 
 1. Ensure you have .NET Core SDK 3.0 installed ([download](https://dotnet.microsoft.com/download/dotnet-core/3.0)).
-1. To install it as a [global tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools) open `src/JsonMerge.CommandLine` in terminal and run:
-    - dotnet pack
-    - dotnet tool install --global --add-source ./nupkg JsonMerge.CommandLine
-1. Now `jsonmerge` is available for you in PowerShell/bash/etc.
+1. Install it as a [.NET Core global tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools):
+    - (Option 1) From nuget.org: `dotnet tool install --global JsonMerge.CommandLine`
+    - (Option 2) Or build & install: 
+      - `cd src/JsonMerge.CommandLine`
+      - `dotnet pack`
+      - `dotnet tool install --global --add-source ./nupkg JsonMerge.CommandLine`
 1. (Bonus) If you want to have tab completion you need to install `dotnet-suggest` as described [here](https://github.com/dotnet/command-line-api/wiki/dotnet-suggest).
 
 ## Usage
