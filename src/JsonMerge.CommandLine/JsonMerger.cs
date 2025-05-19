@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 
 namespace JsonMerge.CommandLine
 {
-    public static class JsonMerger
+public static class JsonMerger
     {
         /// <summary>
         /// Merges multiple JSONs into one.
