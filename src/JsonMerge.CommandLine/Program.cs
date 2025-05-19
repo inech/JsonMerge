@@ -38,6 +38,11 @@ namespace JsonMerge.CommandLine
 
         public static int Merge(FileInfo[] inputFiles, FileInfo output, bool force, IConsole console)
         {
+            if (output == null)
+            {
+                console.Error.WriteLine("Output file path is required.");
+                return 1;
+            }
             var sourceJsons = inputFiles.Select(f => File.ReadAllText(f.FullName));
             var mergedJson = JsonMerger.Merge(sourceJsons);
 
