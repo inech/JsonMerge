@@ -77,6 +77,7 @@ namespace JsonMerge.CommandLine
         private static void PrintUsage()
         {
             Console.Error.WriteLine("Usage: jsonmerge <input1> <input2> [<inputN>...] -o <output> [-f]");
+            Console.Error.WriteLine("The -o|--output option is required.");
         }
     }
 }
